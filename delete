@@ -1,0 +1,65 @@
+class MyNum():
+     def __init__(self, value):
+             print("calling __init__")
+             self.val = value
+     def increment(self):
+             self.val = self.val + 1
+
+
+>>> class InstanceCounter():
+         count = 0
+         def __init__(self, val):
+                 self.val = val
+                 count = 5
+                 count +=1
+                 print(InstanceCounter.count)
+                 print(count)
+         def set_val(self, newval):
+                 self.val = newval
+         def get_val(self):
+                 return self.val
+         def get_count(self):
+                 return count
+
+>>> a = InstanceCounter(5)
+>>> b = InstanceCounter(13)
+>>> c = InstanceCounter(17)
+>>>
+>>> for obj in (a,b,c):
+...     print ("val of obj %s" % (obj.get_val()))
+...     print("count: %s" % (obj.get_count()))
+...
+val of obj 5
+count: 3
+val of obj 13
+count: 3
+val of obj 17
+count: 3
+>>>
+
+
+
+
+class Animal():
+    def __init__(self, name):
+        self.name = name
+    def eat(self, food):
+        print('%s is eating %s.' % (self.name, food))
+
+class Dog(Animal):
+    def fetch(self, thing):
+        print("%s goes after the %s" % (self.name, thing))
+
+class Cat(Animal):
+    def swatstrings(self):
+        print("%s shreds the string! " % (self.name))
+
+r = Dog('Rover')
+f = Cat('Fluffy')
+
+r.fetch('paper')
+f.swatstring()
+r.eat('dog food')
+f.eat('cat food')
+
+r.swatstring()
