@@ -82,4 +82,21 @@
 
 19. dbcn issues
 
-20.
+20. initial_analysis.sh script integration with python (using subprocess module) to get the basic details of the server
+    like,
+    Platform - VM or HW, 500, 5K or 25K,
+    version,
+    no. of servers,
+    platform license
+    app licenses
+    db sizes
+    Core files generated or not
+    Fips enabled, server failed over,
+    Network details,
+    Reboot history of the server,
+    Previous partitions and their versions,
+    Resources allocated to the server,
+    VIP info (if configured),
+    Application access control lists
+
+
