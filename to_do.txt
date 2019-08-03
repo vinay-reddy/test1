@@ -1,0 +1,20 @@
+
+1. radius
+    a.  radius_config file
+    b.  radius-stdout.log
+    c.  radius-stderr.log
+    d.  no. of times a word occurring (unique) in a file. To get an idea of keywords to lookout for.
+    e.  service categorization time,
+        User look up time,
+
+
+2. Policy
+    a.  ps-stdout
+    b.  no. of times a word occurring (unique) in a file. To get an idea of keywords to lookout for.
+
+3. Extracting a single authentication from radius and policy server and arranging it in order.
+    a.
+
+4. corresponding samba logs for dot1x authentication.
+
+5.

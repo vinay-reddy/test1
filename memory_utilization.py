@@ -6,7 +6,7 @@ import pandas as pd
 
 
 
-regex_object=re.compile(r'([\d -:]*(PM|AM))\n((.*?)\n){3}KiB Mem : (.*?)\nKiB Swap: (.*?)\n')
+regex_object=re.compile(r'([\d -:]*(PM|AM))\n((.*?)\n){2}(.*?)\nKiB Mem : (.*?)\nKiB Swap: (.*?)\n')
 
 with open('/Users/vinayreddy/Desktop/logs/gregory-server-performance/tmp8AqQtA/PolicyManagerLogs/system-load-monitor/system-load.2019-07-01.log', 'r') as file:
     a= file.read()
@@ -20,19 +20,27 @@ fh2 = open('/Users/vinayreddy/Desktop/logs/gregory-server-performance/tmp8AqQtA/
 
 outputwriter2 = csv.writer(fh2)
 
+fh3 = open('/Users/vinayreddy/Desktop/logs/gregory-server-performance/tmp8AqQtA/PolicyManagerLogs/system-load-monitor/iowait.csv','w')
+
+outputwriter3 = csv.writer(fh3)
+
 for i in range(len(b)):
-    ram = re.findall('\d+', b[i][4])
-    swap = re.findall('\d+', b[i][5])
+    ram = re.findall('\d+', b[i][5])
+    swap = re.findall('\d+', b[i][6])
+    iowait = re.findall('[\d.]+', b[i][4])
     ram.insert(0, b[i][0].strip())
     swap.insert(0, b[i][0].strip())
+    iowait.insert(0,b[i][0].strip())
     outputwriter.writerow(ram)
     outputwriter2.writerow(swap)
+    outputwriter3.writerow(iowait)
     ram = []
     swap =[]
+    iowait =[]
 
 fh.close()
 fh2.close()
-
+fh3.close()
 #plotting the graph
 
 columns = ['time', 'Total Ram', 'Free Ram', 'Used', 'buff/cache']
@@ -54,5 +62,5 @@ plt.xticks(rotation='vertical')
 plt.show()
 # plt.xlabel("times")
 # plt.ylabel("Ram Usage")
-# plt.title("Graph")a
+# plt.title("Graph")
 

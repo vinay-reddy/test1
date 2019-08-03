@@ -35,7 +35,7 @@ b = pandas_load.sort_values(by=['Time taken'], ascending=False)
 
 series = b['URL']
 
-c = series.value_counts(sort=True)
+c = series.value_counts(sort=True).to_frame()
 print(c[:30])
 
 print(b)
