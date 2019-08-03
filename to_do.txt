@@ -6,6 +6,9 @@
     d.  no. of times a word occurring (unique) in a file. To get an idea of keywords to lookout for.
     e.  service categorization time,
         User look up time,
+        ....            ,
+        Policy Evaluation time, (Role mapping evaluation time separately ?)
+        Request Processing time.
 
 
 2. Policy
@@ -13,8 +16,70 @@
     b.  no. of times a word occurring (unique) in a file. To get an idea of keywords to lookout for.
 
 3. Extracting a single authentication from radius and policy server and arranging it in order.
-    a.
+    a.  tabular form of time taken for a choosen authentication.
 
 4. corresponding samba logs for dot1x authentication.
 
-5.
+5. auth-count-records.tar.gz ----> authentication records? / License usage ?
+    extract and parse the info if it is useful.
+
+6. async-netd -- Elephant in the room. Have to come back to this.
+    PAN updates
+    PostAuth module
+    OnGuard
+    CoA
+    Device Profiling
+    Network scanning
+    etc
+
+7.  Server out of sync
+    How Useful ?
+    Can show when the server started going out of sync.
+    Can estimate / try to figure out if it is related to network issue or Load or anything else.
+    If it is Load, can try to pull the top CPU time consumers from system load monitor.
+    Log files to check:
+        tipsdb.log
+        tips-londiste.log
+        tips-pgqadm.log
+
+        system load monitor
+        postgresql logs
+
+8.  CleanUP issues:
+    platform.log
+
+9.  Failed to fetch software updates etc
+
+    extSync.log -- can only show the errors
+
+10.  mdm
+
+    Can show errors.
+    Can filter out entire logs for one poll to mdm server. (Start of the poll to end of the poll)
+    Log format may vary based on what mdm we are using. Have to think about this.
+
+11.  Backup is failing
+
+
+
+12. Back up restore is failing.
+
+
+
+13. Join server to cluster is failing.
+
+    tipsdb.log
+
+14. Upgrade failed
+
+15. Update failed
+
+16. battery sync issues
+
+17. insight sync issues
+
+18. fdb sync issues
+
+19. dbcn issues
+
+20.
