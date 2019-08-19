@@ -100,3 +100,8 @@
     Application access control lists
 
 
+
+
+21. Have to make all the scripts path independant.
+
+22.

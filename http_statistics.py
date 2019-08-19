@@ -35,7 +35,26 @@ b = pandas_load.sort_values(by=['Time taken'], ascending=False)
 
 series = b['URL']
 
+
 c = series.value_counts(sort=True).to_frame()
 print(c[:30])
 
-print(b)
+
+ip_series = b['IP address'].value_counts(sort=True).to_frame()
+
+# print(ip_series.columns)
+ip_series.reset_index(inplace=True)
+print(ip_series.columns)
+ip_series_count = ip_series.rename(columns={'index': 'IP address', 'IP address': 'Count'})
+print(ip_series_count)
+#
+# print(b)
+
+# function with parameter as IP address and returns all the http requests done by that IP.
+
+# def http_requests_per_ip(ip_address):
+#     req_per_ip = b.loc[b['IP address'] == ip_address]
+#     return req_per_ip
+#
+# req_per_ip =http_requests_per_ip('10.147.243.37')
+# print(req_per_ip)

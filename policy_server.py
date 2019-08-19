@@ -30,4 +30,10 @@ columns = ['Time', 'drop', 'Hmmm...', 'Level', 'Module', 'Message']
 
 df = pd.read_csv('/Users/vinayreddy/Desktop/logs/gregory-server-performance/tmp8AqQtA/PolicyManagerLogs/policy-server/policy.csv', header= None, names = columns)
 
-print(df)
+# a = df['Message'].to_frame()
+# print(a)
+
+for item in df['Hmmm...']:
+    # item.split()
+    # print(list(item.split()))
+    map(l=)
