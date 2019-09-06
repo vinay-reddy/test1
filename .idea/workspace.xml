@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3dbb0c46-45ec-4d90-882e-09c27f9040c0" name="Default Changelist" comment="to_do, radius, policy - basic">
-      <change afterPath="$PROJECT_DIR$/bokeh-test0.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bokeh_testing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/delete-2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/file_extract.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/file_extract_new.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/words_and_the_freq_of_occurance.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/words_frequ2.py" afterDir="false" />
+    <list default="true" id="3dbb0c46-45ec-4d90-882e-09c27f9040c0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/updated_http_statistics.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http_statistics.py" beforeDir="false" afterPath="$PROJECT_DIR$/http_statistics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/policy_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/policy_server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/to_do.txt" beforeDir="false" afterPath="$PROJECT_DIR$/to_do.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delete-2.py" beforeDir="false" afterPath="$PROJECT_DIR$/delete-2.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,13 +18,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/delete-2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="82" column="46" lean-forward="true" selection-start-line="82" selection-start-column="46" selection-end-line="82" selection-end-column="46" />
+            <state relative-caret-position="412">
+              <caret line="63" column="7" selection-start-line="63" selection-end-line="63" selection-end-column="57" />
               <folding>
                 <element signature="e#1#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/updated_http_statistics.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+              <folding>
+                <element signature="e#1#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/csvtester.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -50,8 +66,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/longrunningqueries.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="40" lean-forward="true" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+            <state relative-caret-position="450">
+              <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
               <folding>
                 <element signature="e#2#11#0" expanded="true" />
               </folding>
@@ -62,8 +78,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/http_statistics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="195">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/study/cppm_scripts_to_analyse/netscan.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="899">
+              <caret line="76" column="67" lean-forward="true" selection-start-line="76" selection-start-column="67" selection-end-line="76" selection-end-column="67" />
+              <folding>
+                <element signature="e#0#17#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -88,6 +116,7 @@
       <find>Android_os_version</find>
       <find>android_os</find>
       <find>mac</find>
+      <find>zipped</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -97,7 +126,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/delete" />
         <option value="$PROJECT_DIR$/2.py" />
         <option value="$PROJECT_DIR$/3.py" />
         <option value="$PROJECT_DIR$/4.py" />
@@ -148,6 +176,7 @@
         <option value="$PROJECT_DIR$/file_extract.py" />
         <option value="$PROJECT_DIR$/file_extract_new.py" />
         <option value="$PROJECT_DIR$/delete-2.py" />
+        <option value="$PROJECT_DIR$/updated_http_statistics.py" />
       </list>
     </option>
   </component>
@@ -157,11 +186,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1440" />
-    <option name="y" value="86" />
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
-    <option name="height" value="835" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -171,9 +198,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -182,7 +209,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -196,35 +223,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.swap_memory_utilization">
-    <configuration name="bokeh_testing" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.updated_http_statistics">
+    <configuration name="delete-2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="test1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bokeh_testing.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="delete-2" type="PythonConfigurationType" factoryName="Python">
-      <module name="test1" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -281,27 +284,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="radius" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="test1" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/radius.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="swap_memory_utilization" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="test1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -317,6 +299,24 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/swap_memory_utilization.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="updated_http_statistics" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="test1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/updated_http_statistics.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -346,11 +346,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.swap_memory_utilization" />
-        <item itemvalue="Python.file_extract" />
+        <item itemvalue="Python.updated_http_statistics" />
+        <item itemvalue="Python.updated_http_statistics" />
         <item itemvalue="Python.delete-2" />
-        <item itemvalue="Python.http_statistics" />
-        <item itemvalue="Python.http_statistics" />
+        <item itemvalue="Python.delete-2" />
+        <item itemvalue="Python.swap_memory_utilization" />
       </list>
     </recent_temporary>
   </component>
@@ -407,7 +407,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564876392039</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="https_statistics updated-allfiles.">
+      <created>1566233416327</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1566233416327</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -431,11 +438,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="86" width="1440" height="835" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.87348586" visible="true" weight="0.26251787" />
-      <window_info id="Structure" order="1" sideWeight="0.12651414" side_tool="true" visible="true" weight="0.26251787" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.86927223" visible="true" weight="0.17310444" />
+      <window_info id="Structure" order="1" sideWeight="0.13072777" side_tool="true" weight="0.2732475" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -444,7 +451,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32884097" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49893504" weight="0.2139973" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49893504" visible="true" weight="0.26626506" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3970297" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -462,6 +469,35 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.86927223" visible="true" weight="0.12939297" />
+      <window_info id="Structure" order="1" sideWeight="0.13072777" side_tool="true" weight="0.2732475" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Learn" order="6" weight="0.3297568" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32884097" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49893504" visible="true" weight="0.3237624" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3970297" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32673267" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50106496" side_tool="true" weight="0.42574257" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.48514852" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.16307278" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24964234" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.3297568" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -511,7 +547,8 @@
     <MESSAGE value="to_do, radius, policy - basic" />
     <MESSAGE value="updated to_do" />
     <MESSAGE value="adding initial_analysis.sh file" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding initial_analysis.sh file" />
+    <MESSAGE value="https_statistics updated-allfiles." />
+    <option name="LAST_COMMIT_MESSAGE" value="https_statistics updated-allfiles." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -644,8 +681,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/asdf.py" />
-    <entry file="file://$PROJECT_DIR$/10.py" />
     <entry file="file://$PROJECT_DIR$/balaji.py" />
     <entry file="file://$PROJECT_DIR$/balaji_file.py" />
     <entry file="file://$PROJECT_DIR$/delete" />
@@ -717,23 +752,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
           <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/csvtester.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/delete.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -842,6 +860,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/delete.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/load_avg_graph_basic.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -849,27 +874,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/http_statistics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/longrunningqueries.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="40" lean-forward="true" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+        <state relative-caret-position="450">
+          <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
           <folding>
             <element signature="e#2#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/csvtester.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/http_statistics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/study/cppm_scripts_to_analyse/netscan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="899">
+          <caret line="76" column="67" lean-forward="true" selection-start-line="76" selection-start-column="67" selection-end-line="76" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/delete-2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="82" column="46" lean-forward="true" selection-start-line="82" selection-start-column="46" selection-end-line="82" selection-end-column="46" />
+        <state relative-caret-position="412">
+          <caret line="63" column="7" selection-start-line="63" selection-end-line="63" selection-end-column="57" />
+          <folding>
+            <element signature="e#1#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/updated_http_statistics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
           <folding>
             <element signature="e#1#10#0" expanded="true" />
           </folding>
