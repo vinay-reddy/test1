@@ -93,6 +93,13 @@ print(b)
 series = b['URL']
 c = series.value_counts(sort=True).to_frame()
 print(c[:30])
+
+ip_series = b['IP address'].value_counts(sort=True).to_frame()
+
+ip_series.reset_index(inplace=True)
+ip_series_count = ip_series.rename(columns={'index': 'IP address', 'IP address': 'Count'})
+print(ip_series_count)
+
 #============ need to add this ========
 
 
@@ -112,24 +119,37 @@ print(c_http[:30])
 
 
 
+ip_series = b_http['IP address'].value_counts(sort=True).to_frame()
+
+ip_series.reset_index(inplace=True)
+ip_series_count = ip_series.rename(columns={'index': 'IP address', 'IP address': 'Count'})
+print(ip_series_count)
 
 
+# function with parameter as IP address and returns all the http requests done by that IP.
+
+# def http_requests_per_ip(ip_address):
+#     req_per_ip = b.loc[b['IP address'] == ip_address]
+#     return req_per_ip
+#
+# req_per_ip =http_requests_per_ip('10.147.243.37')
+# print(req_per_ip)
 
 
 '''
     To-Do in this:
     
-        1. Use regex to generate the csv not split method.
+        1. Use regex to generate the csv not split method.      (NOt done yet)
         2. 
 '''
 '''
 Requirements:
 1. Filter based on response times   (done)
 2. URLs -- count                    (done)
-3. IP address -- No. of requests
-4. IP address -- URLs by that IP.
+3. IP address -- No. of requests    (done)
+4. IP address -- URLs by that IP.   (partially done)
 5. If the script is run already, it should not redo every thing if we run again.    (made it considerably faster)
-6. Fix the http_csv file also
+6. Fix the http_csv file also       (done)
 7. Comment the code wherever you can.
 
 '''
