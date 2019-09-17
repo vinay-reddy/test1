@@ -84,7 +84,7 @@ for i in range(len(df_http)):
 concated = pd.concat(list_to_cat, ignore_index=True)
 
 end_time = concated['Date and Time'][0]
-start_time = concated['Date and Time'].tail(1)
+start_time = concated.iloc[-1,:][1]
 
 
 b = concated.sort_values(by=['Time taken'], ascending=False)
@@ -106,7 +106,7 @@ print(ip_series_count)
 concated_http = pd.concat(list_to_cat_http, ignore_index=True)
 
 end_time_http = concated_http['Date and Time'][0]
-start_time_http = concated_http['Date and Time'].tail(1)
+start_time_http = concated.iloc[-1,:][1]
 
 
 b_http = concated_http.sort_values(by=['Time taken'], ascending=False)
@@ -115,7 +115,9 @@ print(b_http)
 series_http = b_http['URL']
 
 c_http = series.value_counts(sort=True).to_frame()
-print(c_http[:30])
+c_http.reset_index(inplace=True)
+c_http_count = c_http.rename(columns={'index': 'URL', 'URL':'Count'})
+print(c_http_count[:30])
 
 
 
@@ -123,6 +125,7 @@ ip_series = b_http['IP address'].value_counts(sort=True).to_frame()
 
 ip_series.reset_index(inplace=True)
 ip_series_count = ip_series.rename(columns={'index': 'IP address', 'IP address': 'Count'})
+print('===============')
 print(ip_series_count)
 
 
@@ -154,9 +157,13 @@ Requirements:
 
 '''
 '''
-Issues:
+Issues fixed:
 
 1. 'ValueError: No objects to concatenate' when you run the script for the first time. (Fixed)
-2.  Fixed csv files size increasing issue everytime we run the script. Now, csv files gets created first time you run the script and will not increase everytime you run the script.
+2.  Fixed csv files size increasing issue every time we run the script. Now, csv files gets created first time you run the script and will not increase every time you run the script.
 
 '''
+print('end time http:', end_time_http)
+print('start time http:', start_time_http)
+print('end time SSL:', end_time)
+print('start time SSL:', start_time)
