@@ -9,7 +9,7 @@ import pprint
 
 columns = ['date', 'timezone', 'dbuser', 'Dbname', 'pid', 'duration', 'statement/query']
 
-a=pd.read_csv('/Users/vinayreddy/Desktop/logs/gregory-server-performance/tmp8AqQtA/SystemLogs/var/lib/pgsql/data/pg_log/queries.csv', names=columns, header = None)
+a=pd.read_csv('/Users/vinayreddy/Desktop/logs/gregory-server-performance/a/SystemLogs/var/lib/pgsql/data/pg_log/queries.csv', names=columns, header = None)
 
 a.duration = pd.to_numeric(a.duration, errors='coerce')
 #a.duration = pd.to_numeric(a.duration)

@@ -45,7 +45,7 @@ with open('/Users/vinayreddy/Desktop/logs/balaji/postgresql-Sat.log', 'r') as fh
 
 #print(listoflines)
 
-with open('/Users/vinayreddy/Desktop/logs/gregory-server-performance/tmp8AqQtA/SystemLogs/var/lib/pgsql/data/pg_log/queries.csv', 'w') as fh2:
+with open('/Users/vinayreddy/Desktop/logs/gregory-server-performance/a/SystemLogs/var/lib/pgsql/data/pg_log/queries.csv', 'w') as fh2:
     outputwriter = csv.writer(fh2)
     for item in listoflines:
         if 'duration:' in item:

@@ -63,8 +63,7 @@ if len(http_ssl_csv) == 0 and len(http_csv) == 0:
         fh2.close()
 
 pd.options.display.max_rows = 120000
-pd.options.display.max_colwidth = 10000
-pd.set_option('display.max_columns', 30)
+pd.options.display.max_colwidth = 1000
 
 columns = ['IP address','Date and Time','HTTP Methods', 'Time taken', 'URL', 'HTTP']
 
@@ -102,94 +101,46 @@ date = concated.sort_values(by=['Date and Time'], ascending=False)
 
 # SSL -- concated files sorted by highest time taken (b)
 b = concated.sort_values(by=['Time taken'], ascending=False)
-#print(b)
+print(b)
 
 # SSL -- URL to count (c_count)
 series = b['URL']
 c = series.value_counts(sort=True).to_frame()
 c.reset_index(inplace=True)
 c_count = c.rename(columns={'index': 'URL', 'URL':'Count'})
-#print(c_count[:30])
-# print('=======o=======')
-# print(c_count[~c_count['URL'].str.contains("battery/")][:30])
-# print('=======o=======')
+print(c_count[:30])
 
 # SSL -- IP to count (ip_series_count)
 ip_series = b['IP address'].value_counts(sort=True).to_frame()
 
 ip_series.reset_index(inplace=True)
 ip_series_count = ip_series.rename(columns={'index': 'IP address', 'IP address': 'Count'})
-#print(ip_series_count)
+print(ip_series_count)
 
 #============ need to add this ========
 
 
-concated_http = pd.concat(list_to_cat_http, ignore_index=True )
-
-# HTTP -- concated files sorted by highest time taken (b_http)
-b_http = concated_http.sort_values(by=['Time taken'], ascending=False)
-
-#print(b_http[:500])
-
-# HTTP -- URL to count (c_http_count)
-series_http = b_http['URL']
-
-c_http = series_http.value_counts(sort=True).to_frame()
-c_http.reset_index(inplace=True)
-c_http_count = c_http.rename(columns={'index': 'URL', 'URL':'Count'})
-#print(c_http_count[:30])
-
-# HTTP -- IP to count (ip_series_count_http)
-
-ip_series_http = b_http['IP address'].value_counts(sort=True).to_frame()
-
-ip_series_http.reset_index(inplace=True)
-ip_series_count_http = ip_series_http.rename(columns={'index': 'IP address', 'IP address': 'Count'})
-print(ip_series_count_http)
-
-
-# function with parameter as IP address and returns all the http requests done by that IP.
-
-# def http_requests_per_ip(ip_address):
-#     req_per_ip = b.loc[b['IP address'] == ip_address]
-#     return req_per_ip
+# concated_http = pd.concat(list_to_cat_http, ignore_index=True )
 #
-# req_per_ip =http_requests_per_ip('10.147.243.37')
-# print(req_per_ip)
-
-
-ssl_end_time, ssl_start_time = start_and_end_time(http_ssl_csv)
-
-http_end_time, http_start_time = start_and_end_time(http_csv)
-
-'''
-    To-Do in this:
-    
-        1. Use regex to generate the csv not split method.      (NOt done yet)
-        2. 
-'''
-'''
-Requirements:
-1. Filter based on response times   (done)
-2. URLs -- count                    (done)
-3. IP address -- No. of requests    (done)
-4. IP address -- URLs by that IP.   (partially done)
-5. If the script is run already, it should not redo every thing if we run again.    (made it considerably faster)
-6. Fix the http_csv file also       (done)
-7. Comment the code wherever you can.
-
-'''
-'''
-Issues fixed:
-
-1. 'ValueError: No objects to concatenate' when you run the script for the first time. (Fixed)
-2.  Fixed csv files size increasing issue every time we run the script. Now, csv files gets created first time you run the script and will not increase every time you run the script.
-3.  fixed start and end time issue
-4.  fixed the wrong index on URL - count
-
-
-'''
-# print('end time http:', http_end_time)
-# print('start time http:', http_start_time)
-# print('end time SSL:', ssl_end_time)
-# print('start time SSL:', ssl_start_time)
+# # HTTP -- concated files sorted by highest time taken (b_http)
+# b_http = concated_http.sort_values(by=['Time taken'], ascending=False)
+#
+# print(b_http)
+#
+# # HTTP -- URL to count (c_http_count)
+# series_http = b_http['URL']
+#
+# c_http = series_http.value_counts(sort=True).to_frame()
+# c_http.reset_index(inplace=True)
+# c_http_count = c_http.rename(columns={'index': 'URL', 'URL':'Count'})
+# print(c_http_count[:30])
+#
+# # HTTP -- IP to count (ip_series_count_http)
+#
+# ip_series_http = b_http['IP address'].value_counts(sort=True).to_frame()
+#
+# ip_series_http.reset_index(inplace=True)
+# ip_series_count_http = ip_series_http.rename(columns={'index': 'IP address', 'IP address': 'Count'})
+# print(ip_series_count_http)
+#
+#
