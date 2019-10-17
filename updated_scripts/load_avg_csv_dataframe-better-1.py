@@ -14,6 +14,8 @@ ro = re.compile(r'(([\d -:]+(PM|AM))\n(.*?load average: ([\d .]+),([\d .]+),([\d
 
 
 def system_load_monitor_folder_files(path):
+    print('inside the function now')
+    print(path)
     system_load_files = []
     system_load_files_csv = []
     for f, sf, files in os.walk(path):
@@ -23,14 +25,13 @@ def system_load_monitor_folder_files(path):
                     system_load_files_csv.append(f+'/'+file)
                 elif 'system-load' in file:
                     system_load_files.append(f+'/'+file)
-
             return system_load_files, system_load_files_csv, f
 
-system_load_files, system_load_files_csv, system_load_files_folder = system_load_monitor_folder_files('/Users/vinayreddy/Desktop/logs/gregory-server-performance/')
+system_load_files, system_load_files_csv, system_load_files_folder = system_load_monitor_folder_files('/Users/vinayreddy/Desktop/logs/gregory-server-performance')
 
-# print(system_load_files)
-# print(system_load_files_csv)
-# print(system_load_files_folder)
+print(system_load_files)
+print(system_load_files_csv)
+print(system_load_files_folder)
 
 
 if len(system_load_files_csv) == 0 :
@@ -38,14 +39,16 @@ if len(system_load_files_csv) == 0 :
         with open( system_load_files[j], 'r') as fh:
             a= fh.read()
             b = re.split('\n\s*\n', a)
-            c = [ i for i in b if '%Cpu(s)' in i]
+            c = [ i for i in b if 'load average:' in i]
 #            with open(system_load_files[j] +'_csv_'+ str(j), 'w' ) as fh2:
             with open( system_load_files_folder + '/system-load-csv' ,'a' ) as fh2:
                 csv_fh = csv.writer(fh2)
                 for i in c:
                     d = ro.search(i)
-                    csv_fh.writerow([d[2].strip(), d[5].strip(), d[6].strip(), d[7].strip(), d[9].strip(), d[10].strip(), d[11].strip(), d[12].strip(), d[13].strip(), d[14].strip(),d[15].strip(), d[16].strip(), d[18].strip(), d[19].strip(), d[20].strip(), d[21].strip(), d[23].strip(), d[24].strip(), d[25].strip(),d[26].strip()])
-
+                    if d is not None:
+                        csv_fh.writerow([d[2].strip(), d[5].strip(), d[6].strip(), d[7].strip(), d[9].strip(), d[10].strip(), d[11].strip(), d[12].strip(), d[13].strip(), d[14].strip(),d[15].strip(), d[16].strip(), d[18].strip(), d[19].strip(), d[20].strip(), d[21].strip(), d[23].strip(), d[24].strip(), d[25].strip(),d[26].strip()])
+                    else:
+                        print(i)
 columns = ['Date-Time', '1 Min load avg', '5 Min load avg', '15 Min load avg', 'us', 'sy', 'ni', 'id','wa', 'hi', 'si', 'st', 'KiB Memory-Total', 'KiB Memory-free', 'KiB Memory-used', 'KiB Memory-Buff/Cache', 'KiB Swap-total', 'KiB Swap-free', 'KiB Swap-used', 'KiB Swap-available-Mem']
 df = pd.read_csv(system_load_files_folder + '/system-load-csv', names=columns,  header=None)
 # df['KiB Swap-available-Mem'] = df['KiB Swap-available-Mem'].astype(int)
@@ -53,7 +56,10 @@ df = pd.read_csv(system_load_files_folder + '/system-load-csv', names=columns,  
 print(len(columns))
 
 
+# function to extract the between two timestamps
 
+# def systemLoadMonitorLinesExtract(time):
+#     fh = open()
 
 
 
@@ -107,5 +113,36 @@ Match 1
 24.	0
 25.	3071996
 26.	1377344 
+
+6.6.x
+
+09-10-19 11:05:30 PM
+top - 23:05:30 up 1 min,  0 users,  load average: 0.39, 0.13, 0.05
+Tasks: 374 total,   2 running, 372 sleeping,   0 stopped,   0 zombie
+Cpu(s):  0.6%us,  1.1%sy,  0.0%ni, 97.5%id,  0.8%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:  32777112k total,   950376k used, 31826736k free,   103104k buffers
+Swap:  3071996k total,        0k used,  3071996k free,   406012k cached
+
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND
+ 4127 root      20   0  186m  11m 3840 S 17.7  0.0   0:00.10 /usr/bin/python /usr/sbin/iotop -b -o -d 1800 -P -t
+ 3661 root      20   0 16820  508  360 S  7.9  0.0   0:00.47 jitterentropy-rngd -vvv -d -p /var/run/jitterentropy-rngd.pid
+ 4162 root      20   0  109m 1072  716 R  5.9  0.0   0:00.03 chown -R apache:apache /opt/amigopod/www
+   73 root      20   0     0    0    0 S  2.0  0.0   0:00.33 [rcu_sched]
+   85 root      20   0     0    0    0 S  2.0  0.0   0:00.02 [rcuos/11]
+ 3976 root      20   0  111m 1568 1304 S  2.0  0.0   0:00.01 /bin/sh /usr/local/avenda/platform/bin/run-onboot-tasks
+ 4128 root      20   0 21600 1480  920 R  2.0  0.0   0:00.01 top -b -c -d 120
+    1 root      20   0 27744 1548 1252 S  0.0  0.0   0:01.42 /sbin/init
+    
+'''
+'''
+Issues to fix:
+1. Breaks if python doesn't have permissions to access the files.
+2. Breaks if file is not present. May be TAC didn't collect Policy Manager logs.
+3. Breaks if run on 6.6.x logs as 'top c' output is different in two versions. Have to optimize the regex such that it works for both versions or display a message
+that only works for 6.7 and above.
+4. Handle the case when there are multiple system-load-monitor files.
+5. Perform tests on             b = re.split('\n\s*\n', a).                         ==> works fine. No issues.
+6. In case of multiple files, it is just appending the files one after the other. since system-load-monitor log file names don't end with a number but a date, it would be
+difficult to order them. Fix it by sorting the dataframe by timestamp.
 
 '''
