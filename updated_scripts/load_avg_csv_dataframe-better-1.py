@@ -58,10 +58,18 @@ print(len(columns))
 
 # function to extract the between two timestamps
 
-# def systemLoadMonitorLinesExtract(time):
-#     fh = open()
+def systemLoadMonitorLinesExtract(time):
+    for file in system_load_files:
+        fh = open(file)
+        file_read = fh.read()
+        ro = re.compile(r'{}.*?{}' .format(time, time), re.DOTALL)
+        mo = ro.search(file_read)
+        if mo is not None:
+            a = mo.group()
+            return a
 
-
+extracted_text= systemLoadMonitorLinesExtract('06-29-19 03:43:06 PM')
+print(extracted_text)
 
 '''
 
