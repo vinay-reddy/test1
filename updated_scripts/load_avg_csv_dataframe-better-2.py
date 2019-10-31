@@ -85,6 +85,8 @@ def systemLoadMonitorLinesExtract(time):
                 if mo is not None:
                     a = mo.group()
                     return a
+        elif count == 0:
+            continue
 
 extracted_text= systemLoadMonitorLinesExtract('07-01-19 08:38:03 PM')
 print('extracted text is: ',extracted_text)
