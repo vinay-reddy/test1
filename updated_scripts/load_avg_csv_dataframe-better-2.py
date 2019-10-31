@@ -65,7 +65,7 @@ def systemLoadMonitorLinesExtract(time):
         count=file_read.count(time)
         print('Count =', count)
         if count == 2:
-            ro = re.compile(r'{}.*?{}' .format(time, time), re.DOTALL)
+            ro = re.compile(r'{}.*?{}.*?{}' .format(time, time, '\d{2}-\d{2}-\d{2} \d{2}:\d{2}:\d{2} [A-Z]{2}'), re.DOTALL)
             mo = ro.search(file_read)
             if mo is not None:
                 a = mo.group()
@@ -88,7 +88,7 @@ def systemLoadMonitorLinesExtract(time):
         elif count == 0:
             continue
 
-extracted_text= systemLoadMonitorLinesExtract('07-01-19 08:38:03 PM')
+extracted_text= systemLoadMonitorLinesExtract('06-29-19 03:43:06 PM')
 print('extracted text is: ',extracted_text)
 
 '''
