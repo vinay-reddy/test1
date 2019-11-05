@@ -79,3 +79,27 @@ series = b['statement/query']
 
 c = series.value_counts(sort=True)
 print(c.to_frame())
+
+# d = a.set_index(['Dbname', 'statement/query']).count(level='Dbname')
+# print(d)
+
+# no. of queries on each db
+db_series = a['Dbname'].value_counts(sort=True).to_frame()
+
+db_series.reset_index(inplace=True)
+db_series_count = db_series.rename(columns={'index': 'Dbname', 'Dbname': 'Count'})
+
+print(db_series_count)
+
+
+'''
+output of db_series_count:
+        Dbname  Count
+0    insightdb  38375
+1    tipsLogDb   5660
+2       tipsdb    891
+3  AppPlatform    411
+4     postgres      5
+5    template1      2
+
+'''
