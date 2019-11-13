@@ -2,17 +2,117 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98fbf2cb-79d3-4075-bf53-45ae9cfcd385" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cynthia-delete.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_log_analyzer/blog_app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_log_analyzer/blog_app/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_log_analyzer/blog_app/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_log_analyzer/blog_app/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_log_analyzer/blog_app/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_log_analyzer/blog_app/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_log_analyzer/blog_app/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_log_analyzer/blog_app/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_log_analyzer/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_log_analyzer/django_log_analyzer/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_log_analyzer/django_log_analyzer/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_log_analyzer/django_log_analyzer/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_log_analyzer/django_log_analyzer/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_log_analyzer/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/Load_average_cpu_usage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/attempt1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/balaji_with_out_comments.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/bokeh-test0.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/bokeh.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/bokeh_testing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/charles-arpit-bug.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/csvtester.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/cynthia-delete.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/delete-2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/delete.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/delete2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/extract_mac_from_SHL.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/file_extract.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/file_extract_new.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/http_statistics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/initial_analysis.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/iowait_consumption.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/johnson-profiler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/lines.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/load_avg_cpu_io_usage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/load_avg_csv_dataframe-better-1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/load_avg_csv_dataframe.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/load_avg_graph_basic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/longrunningqueries.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/memory_utilization.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/new-extract-mac-from-shl-to-guest-device-xml.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/new-extract-mac-from-shl2-to-guest-device-xml.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/node-to-de.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/policy_server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/postgres-info.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/radius.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/samba-2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/samba-2_copy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/samba.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/swap_memory_utilization.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/system_load_files_folder" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/to_do.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/updated-http-stats-delete.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/updated_http_statistics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/updated_long_running_queries.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/updated_radius.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/vijay_escalation_shl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/vijay_escalation_shl_revision2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/words_and_the_freq_of_occurance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_draft_python_scripts/words_frequ2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/updated_scripts/updated_radius_smb-1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iowait_consumption.py" beforeDir="false" afterPath="$PROJECT_DIR$/iowait_consumption.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samba-2.py" beforeDir="false" afterPath="$PROJECT_DIR$/samba-2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/updated_long_running_queries.py" beforeDir="false" afterPath="$PROJECT_DIR$/updated_long_running_queries.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Load_average_cpu_usage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/attempt1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/balaji_with_out_comments.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bokeh-test0.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bokeh.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bokeh_testing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csvtester.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/delete-2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/delete.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/delete2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/extract_mac_from_SHL.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_extract.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_extract_new.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/http_statistics.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/initial_analysis.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iowait_consumption.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/johnson-profiler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lines.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/load_avg_cpu_io_usage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/load_avg_csv_dataframe-better-1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/load_avg_csv_dataframe.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/load_avg_graph_basic.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/longrunningqueries.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory_utilization.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new-extract-mac-from-shl-to-guest-device-xml.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new-extract-mac-from-shl2-to-guest-device-xml.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/policy_server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/radius.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/samba-2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/samba.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swap_memory_utilization.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/system_load_files_folder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/to_do.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/updated-http-stats-delete.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/updated_http_statistics.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/updated_long_running_queries.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/updated_scripts/load_avg_csv_dataframe-better-1.py" beforeDir="false" afterPath="$PROJECT_DIR$/updated_scripts/load_avg_csv_dataframe-better-1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/updated_scripts/updated_long_running_queries.py" beforeDir="false" afterPath="$PROJECT_DIR$/updated_scripts/updated_long_running_queries.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/words_and_the_freq_of_occurance.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/words_frequ2.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/exportToHTML" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -25,6 +125,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1RXaNmSOrM1gjsARLfyCR4IZHKI" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -32,11 +135,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -50,7 +153,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.johnson-profiler">
+  <component name="RunManager" selected="Python.postgres-info-1">
+    <configuration name="charles-arpit-bug" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python_programs" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/charles-arpit-bug.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="johnson-profiler" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_programs" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -72,7 +196,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="radius" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="postgres-info-1 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_programs" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -80,11 +204,29 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/initial_draft_python_scripts" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/radius.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/initial_draft_python_scripts/postgres-info-1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="postgres-info-1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python_programs" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/initial_draft_python_scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/initial_draft_python_scripts/postgres-info-1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -93,61 +235,16 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="samba-2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="updated_radius_smb-1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_programs" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/updated_scripts" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/samba-2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="updated_http_statistics" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python_programs" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/updated_http_statistics.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="updated_long_running_queries" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python_programs" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/updated_long_running_queries.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/updated_scripts/updated_radius_smb-1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -158,11 +255,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.johnson-profiler" />
-        <item itemvalue="Python.updated_long_running_queries" />
-        <item itemvalue="Python.updated_http_statistics" />
-        <item itemvalue="Python.radius" />
-        <item itemvalue="Python.updated_long_running_queries" />
+        <item itemvalue="Python.postgres-info-1" />
+        <item itemvalue="Python.updated_radius_smb-1" />
+        <item itemvalue="Python.updated_radius_smb-1" />
+        <item itemvalue="Python.postgres-info-1 (1)" />
+        <item itemvalue="Python.postgres-info-1" />
       </list>
     </recent_temporary>
   </component>
@@ -184,18 +281,102 @@
       <option name="project" value="LOCAL" />
       <updated>1569817680021</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="updated scripts">
+      <created>1570140836471</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1570140836471</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fixing a bug in load_avg_csv_dataframe-better-1.py script. --&gt; can't subscript a NoneType">
+      <created>1571280541912</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1571280541912</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added function to extract top c output after passing time.">
+      <created>1572159607197</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1572159607197</updated>
+    </task>
+    <task id="LOCAL-00005" summary="updated_long_running_queries-updated the function to handle scenarios where we have only one time entry per one top c output and to handle the last entry of topc in a file.">
+      <created>1572526572048</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1572526572048</updated>
+    </task>
+    <task id="LOCAL-00006" summary="updated_long_running_queries-updated the function to handle scenarios where we have only one time entry per one top c output and to handle the last entry of topc in a file. ----&gt; also if time is not present in current file, continue to next system load monitor file.">
+      <created>1572527329577</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1572527329577</updated>
+    </task>
+    <task id="LOCAL-00007" summary="updated_long_running_queries-updated the function to handle scenarios where we have only one time entry per one top c output and to handle the last entry of topc in a file. ----&gt; also if time is not present in current file, continue to next system load monitor file. ----&gt; also, to extract all lines.">
+      <created>1572528139647</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1572528139647</updated>
+    </task>
+    <task id="LOCAL-00008" summary="no. of queries on each db.">
+      <created>1572976120928</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1572976120928</updated>
+    </task>
+    <task id="LOCAL-00009" summary="relative lag">
+      <created>1573600158236</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1573600158236</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="samba" />
-    <option name="LAST_COMMIT_MESSAGE" value="samba" />
+    <MESSAGE value="updated scripts" />
+    <MESSAGE value="fixing a bug in load_avg_csv_dataframe-better-1.py script. --&gt; can't subscript a NoneType" />
+    <MESSAGE value="added function to extract top c output after passing time." />
+    <MESSAGE value="updated_long_running_queries-updated the function to handle scenarios where we have only one time entry per one top c output and to handle the last entry of topc in a file." />
+    <MESSAGE value="updated_long_running_queries-updated the function to handle scenarios where we have only one time entry per one top c output and to handle the last entry of topc in a file. ----&gt; also if time is not present in current file, continue to next system load monitor file." />
+    <MESSAGE value="updated_long_running_queries-updated the function to handle scenarios where we have only one time entry per one top c output and to handle the last entry of topc in a file. ----&gt; also if time is not present in current file, continue to next system load monitor file. ----&gt; also, to extract all lines." />
+    <MESSAGE value="no. of queries on each db." />
+    <MESSAGE value="relative lag" />
+    <option name="LAST_COMMIT_MESSAGE" value="relative lag" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="115" key="#Inspections" timestamp="1569817102583">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="115" key="#Inspections/0.0.1440.900@0.0.1440.900" timestamp="1569817102583" />
+    <state x="2184" y="374" key="#com.intellij.debugger.actions.ViewTextAction" timestamp="1573340159719">
+      <screen x="1440" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2184" y="374" key="#com.intellij.debugger.actions.ViewTextAction/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1573340159719" />
+    <state x="558" y="312" key="#com.intellij.debugger.actions.ViewTextAction/0.0.1440.900@0.0.1440.900" timestamp="1573000225517" />
+    <state x="558" y="312" key="#com.intellij.debugger.actions.ViewTextAction/0.23.1440.835@0.23.1440.835" timestamp="1572524157787" />
     <state x="471" y="277" key="#com.intellij.tools.ToolEditorDialog" timestamp="1569818088111">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -204,54 +385,227 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="429" y="48" key="#http_statistics/0.0.1440.900@0.0.1440.900" timestamp="1569817083527" />
+    <state x="2109" y="150" key="#load_avg_csv_dataframe-better-1" timestamp="1571259622792">
+      <screen x="1440" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2109" y="150" key="#load_avg_csv_dataframe-better-1/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1571259622792" />
+    <state x="429" y="49" key="#radius" timestamp="1570482863696">
+      <screen x="0" y="23" width="1440" height="834" />
+    </state>
+    <state x="429" y="49" key="#radius/0.23.1440.834@0.23.1440.834" timestamp="1570482863696" />
+    <state x="1693" y="259" key="#xdebugger.XInspectDialog" timestamp="1573675760572">
+      <screen x="1440" y="0" width="1920" height="1080" />
+    </state>
+    <state x="0" y="250" key="#xdebugger.XInspectDialog/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1573328803227" />
+    <state x="1693" y="259" key="#xdebugger.XInspectDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1573675760572" />
+    <state x="0" y="250" key="#xdebugger.XInspectDialog/0.0.1440.900@0.0.1440.900" timestamp="1573448155610" />
+    <state x="1680" y="300" key="#xdebugger.XInspectDialog/0.23.1440.834/1440.0.1920.1080@1440.0.1920.1080" timestamp="1573068687869" />
+    <state x="2289" y="250" key="#xdebugger.evaluate" timestamp="1573340714624">
+      <screen x="1440" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2289" y="250" key="#xdebugger.evaluate/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1573340714624" />
     <state x="468" y="313" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1569817546519">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="468" y="313" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.900@0.0.1440.900" timestamp="1569817546519" />
-    <state width="1878" height="304" key="GridCell.Tab.0.bottom" timestamp="1570053963244">
-      <screen x="1440" y="0" width="1920" height="1080" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1573577146325">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1878" height="304" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1570053963244" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1569817488744" />
+    <state width="1398" height="303" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1570144477132" />
+    <state width="1878" height="304" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1573516210752" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1573577146325" />
+    <state width="1878" height="716" key="GridCell.Tab.0.bottom/0.23.1440.832/1440.23.1920.1057@1440.23.1920.1057" timestamp="1573514855958" />
+    <state width="1878" height="375" key="GridCell.Tab.0.bottom/0.23.1440.832@0.23.1440.832" timestamp="1572290762755" />
+    <state width="1878" height="375" key="GridCell.Tab.0.bottom/0.23.1440.833/1440.23.1920.1057@1440.23.1920.1057" timestamp="1573341716796" />
+    <state width="1398" height="251" key="GridCell.Tab.0.bottom/0.23.1440.833@0.23.1440.833" timestamp="1572158867723" />
+    <state width="1878" height="375" key="GridCell.Tab.0.bottom/0.23.1440.834/1440.0.1920.1080@1440.0.1920.1080" timestamp="1573337697290" />
+    <state width="1878" height="259" key="GridCell.Tab.0.bottom/0.23.1440.834/1440.23.1920.1057@1440.23.1920.1057" timestamp="1572548722254" />
+    <state width="1878" height="375" key="GridCell.Tab.0.bottom/0.23.1440.834@0.23.1440.834" timestamp="1571580788909" />
+    <state width="1878" height="394" key="GridCell.Tab.0.bottom/0.23.1440.835/1440.23.1920.1057@1440.23.1920.1057" timestamp="1572549933325" />
+    <state width="1398" height="268" key="GridCell.Tab.0.bottom/0.23.1440.835@0.23.1440.835" timestamp="1572522238844" />
     <state width="1398" height="304" key="GridCell.Tab.0.bottom/0.23.1440.836/1440.23.1920.1057@1440.23.1920.1057" timestamp="1569882950638" />
     <state width="1398" height="304" key="GridCell.Tab.0.bottom/0.23.1440.837/1440.23.1920.1057@1440.23.1920.1057" timestamp="1569869424506" />
-    <state width="1878" height="304" key="GridCell.Tab.0.center" timestamp="1570053963243">
-      <screen x="1440" y="0" width="1920" height="1080" />
+    <state width="1398" height="251" key="GridCell.Tab.0.bottom/0.23.1440.838@0.23.1440.838" timestamp="1570931572330" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1573577146324">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1878" height="304" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1570053963243" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1569817488743" />
+    <state width="1398" height="303" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1570144477131" />
+    <state width="1878" height="304" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1573516210750" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1573577146324" />
+    <state width="1878" height="716" key="GridCell.Tab.0.center/0.23.1440.832/1440.23.1920.1057@1440.23.1920.1057" timestamp="1573514855957" />
+    <state width="1878" height="375" key="GridCell.Tab.0.center/0.23.1440.832@0.23.1440.832" timestamp="1572290762754" />
+    <state width="1878" height="375" key="GridCell.Tab.0.center/0.23.1440.833/1440.23.1920.1057@1440.23.1920.1057" timestamp="1573341716795" />
+    <state width="1398" height="251" key="GridCell.Tab.0.center/0.23.1440.833@0.23.1440.833" timestamp="1572158867722" />
+    <state width="1878" height="375" key="GridCell.Tab.0.center/0.23.1440.834/1440.0.1920.1080@1440.0.1920.1080" timestamp="1573337697288" />
+    <state width="1878" height="259" key="GridCell.Tab.0.center/0.23.1440.834/1440.23.1920.1057@1440.23.1920.1057" timestamp="1572548722253" />
+    <state width="1878" height="375" key="GridCell.Tab.0.center/0.23.1440.834@0.23.1440.834" timestamp="1571580788907" />
+    <state width="1878" height="394" key="GridCell.Tab.0.center/0.23.1440.835/1440.23.1920.1057@1440.23.1920.1057" timestamp="1572549933324" />
+    <state width="1398" height="268" key="GridCell.Tab.0.center/0.23.1440.835@0.23.1440.835" timestamp="1572522238843" />
     <state width="1398" height="304" key="GridCell.Tab.0.center/0.23.1440.836/1440.23.1920.1057@1440.23.1920.1057" timestamp="1569882950637" />
     <state width="1398" height="304" key="GridCell.Tab.0.center/0.23.1440.837/1440.23.1920.1057@1440.23.1920.1057" timestamp="1569869424505" />
-    <state width="1878" height="304" key="GridCell.Tab.0.left" timestamp="1570053963241">
-      <screen x="1440" y="0" width="1920" height="1080" />
+    <state width="1398" height="251" key="GridCell.Tab.0.center/0.23.1440.838@0.23.1440.838" timestamp="1570931572329" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1573577146323">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1878" height="304" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1570053963241" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1569817488742" />
+    <state width="1398" height="303" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1570144477130" />
+    <state width="1878" height="304" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1573516210749" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1573577146323" />
+    <state width="1878" height="716" key="GridCell.Tab.0.left/0.23.1440.832/1440.23.1920.1057@1440.23.1920.1057" timestamp="1573514855956" />
+    <state width="1878" height="375" key="GridCell.Tab.0.left/0.23.1440.832@0.23.1440.832" timestamp="1572290762753" />
+    <state width="1878" height="375" key="GridCell.Tab.0.left/0.23.1440.833/1440.23.1920.1057@1440.23.1920.1057" timestamp="1573341716794" />
+    <state width="1398" height="251" key="GridCell.Tab.0.left/0.23.1440.833@0.23.1440.833" timestamp="1572158867722" />
+    <state width="1878" height="375" key="GridCell.Tab.0.left/0.23.1440.834/1440.0.1920.1080@1440.0.1920.1080" timestamp="1573337697287" />
+    <state width="1878" height="259" key="GridCell.Tab.0.left/0.23.1440.834/1440.23.1920.1057@1440.23.1920.1057" timestamp="1572548722252" />
+    <state width="1878" height="375" key="GridCell.Tab.0.left/0.23.1440.834@0.23.1440.834" timestamp="1571580788905" />
+    <state width="1878" height="394" key="GridCell.Tab.0.left/0.23.1440.835/1440.23.1920.1057@1440.23.1920.1057" timestamp="1572549933324" />
+    <state width="1398" height="268" key="GridCell.Tab.0.left/0.23.1440.835@0.23.1440.835" timestamp="1572522238842" />
     <state width="1398" height="304" key="GridCell.Tab.0.left/0.23.1440.836/1440.23.1920.1057@1440.23.1920.1057" timestamp="1569882950637" />
     <state width="1398" height="304" key="GridCell.Tab.0.left/0.23.1440.837/1440.23.1920.1057@1440.23.1920.1057" timestamp="1569869424504" />
-    <state width="1878" height="304" key="GridCell.Tab.0.right" timestamp="1570053963244">
-      <screen x="1440" y="0" width="1920" height="1080" />
+    <state width="1398" height="251" key="GridCell.Tab.0.left/0.23.1440.838@0.23.1440.838" timestamp="1570931572329" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1573577146324">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1878" height="304" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1570053963244" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1569817488743" />
+    <state width="1398" height="303" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1570144477132" />
+    <state width="1878" height="304" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1573516210751" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1573577146324" />
+    <state width="1878" height="716" key="GridCell.Tab.0.right/0.23.1440.832/1440.23.1920.1057@1440.23.1920.1057" timestamp="1573514855957" />
+    <state width="1878" height="375" key="GridCell.Tab.0.right/0.23.1440.832@0.23.1440.832" timestamp="1572290762754" />
+    <state width="1878" height="375" key="GridCell.Tab.0.right/0.23.1440.833/1440.23.1920.1057@1440.23.1920.1057" timestamp="1573341716795" />
+    <state width="1398" height="251" key="GridCell.Tab.0.right/0.23.1440.833@0.23.1440.833" timestamp="1572158867723" />
+    <state width="1878" height="375" key="GridCell.Tab.0.right/0.23.1440.834/1440.0.1920.1080@1440.0.1920.1080" timestamp="1573337697289" />
+    <state width="1878" height="259" key="GridCell.Tab.0.right/0.23.1440.834/1440.23.1920.1057@1440.23.1920.1057" timestamp="1572548722253" />
+    <state width="1878" height="375" key="GridCell.Tab.0.right/0.23.1440.834@0.23.1440.834" timestamp="1571580788908" />
+    <state width="1878" height="394" key="GridCell.Tab.0.right/0.23.1440.835/1440.23.1920.1057@1440.23.1920.1057" timestamp="1572549933325" />
+    <state width="1398" height="268" key="GridCell.Tab.0.right/0.23.1440.835@0.23.1440.835" timestamp="1572522238844" />
     <state width="1398" height="304" key="GridCell.Tab.0.right/0.23.1440.836/1440.23.1920.1057@1440.23.1920.1057" timestamp="1569882950637" />
     <state width="1398" height="304" key="GridCell.Tab.0.right/0.23.1440.837/1440.23.1920.1057@1440.23.1920.1057" timestamp="1569869424506" />
-    <state x="1717" y="28" width="1024" height="833" key="SettingsEditor" timestamp="1569869146403">
+    <state width="1398" height="251" key="GridCell.Tab.0.right/0.23.1440.838@0.23.1440.838" timestamp="1570931572330" />
+    <state width="1878" height="375" key="GridCell.Tab.1.bottom" timestamp="1573514855415">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1570144477139" />
+    <state width="1878" height="375" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1573415858926" />
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1573315980823" />
+    <state width="1878" height="375" key="GridCell.Tab.1.bottom/0.23.1440.832/1440.23.1920.1057@1440.23.1920.1057" timestamp="1573514855415" />
+    <state width="1878" height="375" key="GridCell.Tab.1.bottom/0.23.1440.832@0.23.1440.832" timestamp="1572290762756" />
+    <state width="1878" height="375" key="GridCell.Tab.1.bottom/0.23.1440.833/1440.0.1920.1080@1440.0.1920.1080" timestamp="1573337046181" />
+    <state width="1878" height="375" key="GridCell.Tab.1.bottom/0.23.1440.833/1440.23.1920.1057@1440.23.1920.1057" timestamp="1573341716800" />
+    <state width="1878" height="375" key="GridCell.Tab.1.bottom/0.23.1440.834/1440.0.1920.1080@1440.0.1920.1080" timestamp="1573337697295" />
+    <state width="1878" height="375" key="GridCell.Tab.1.bottom/0.23.1440.834/1440.23.1920.1057@1440.23.1920.1057" timestamp="1573342950118" />
+    <state width="1878" height="375" key="GridCell.Tab.1.bottom/0.23.1440.834@0.23.1440.834" timestamp="1571580788911" />
+    <state width="1398" height="268" key="GridCell.Tab.1.bottom/0.23.1440.835@0.23.1440.835" timestamp="1572522238846" />
+    <state width="1398" height="318" key="GridCell.Tab.1.bottom/0.23.1440.838@0.23.1440.838" timestamp="1570755031353" />
+    <state width="1878" height="375" key="GridCell.Tab.1.center" timestamp="1573514855414">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.center/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1570144477135" />
+    <state width="1878" height="375" key="GridCell.Tab.1.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1573415858925" />
+    <state width="1398" height="303" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1573315980821" />
+    <state width="1878" height="375" key="GridCell.Tab.1.center/0.23.1440.832/1440.23.1920.1057@1440.23.1920.1057" timestamp="1573514855414" />
+    <state width="1878" height="375" key="GridCell.Tab.1.center/0.23.1440.832@0.23.1440.832" timestamp="1572290762755" />
+    <state width="1878" height="375" key="GridCell.Tab.1.center/0.23.1440.833/1440.0.1920.1080@1440.0.1920.1080" timestamp="1573337046180" />
+    <state width="1878" height="375" key="GridCell.Tab.1.center/0.23.1440.833/1440.23.1920.1057@1440.23.1920.1057" timestamp="1573341716799" />
+    <state width="1878" height="375" key="GridCell.Tab.1.center/0.23.1440.834/1440.0.1920.1080@1440.0.1920.1080" timestamp="1573337697294" />
+    <state width="1878" height="375" key="GridCell.Tab.1.center/0.23.1440.834/1440.23.1920.1057@1440.23.1920.1057" timestamp="1573342950117" />
+    <state width="1878" height="375" key="GridCell.Tab.1.center/0.23.1440.834@0.23.1440.834" timestamp="1571580788910" />
+    <state width="1398" height="268" key="GridCell.Tab.1.center/0.23.1440.835@0.23.1440.835" timestamp="1572522238845" />
+    <state width="1398" height="318" key="GridCell.Tab.1.center/0.23.1440.838@0.23.1440.838" timestamp="1570755031352" />
+    <state width="1878" height="375" key="GridCell.Tab.1.left" timestamp="1573514855414">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.left/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1570144477133" />
+    <state width="1878" height="375" key="GridCell.Tab.1.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1573415858924" />
+    <state width="1398" height="303" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1573315980820" />
+    <state width="1878" height="375" key="GridCell.Tab.1.left/0.23.1440.832/1440.23.1920.1057@1440.23.1920.1057" timestamp="1573514855414" />
+    <state width="1878" height="375" key="GridCell.Tab.1.left/0.23.1440.832@0.23.1440.832" timestamp="1572290762755" />
+    <state width="1878" height="375" key="GridCell.Tab.1.left/0.23.1440.833/1440.0.1920.1080@1440.0.1920.1080" timestamp="1573337046179" />
+    <state width="1878" height="375" key="GridCell.Tab.1.left/0.23.1440.833/1440.23.1920.1057@1440.23.1920.1057" timestamp="1573341716798" />
+    <state width="1878" height="375" key="GridCell.Tab.1.left/0.23.1440.834/1440.0.1920.1080@1440.0.1920.1080" timestamp="1573337697293" />
+    <state width="1878" height="375" key="GridCell.Tab.1.left/0.23.1440.834/1440.23.1920.1057@1440.23.1920.1057" timestamp="1573342950116" />
+    <state width="1878" height="375" key="GridCell.Tab.1.left/0.23.1440.834@0.23.1440.834" timestamp="1571580788909" />
+    <state width="1398" height="268" key="GridCell.Tab.1.left/0.23.1440.835@0.23.1440.835" timestamp="1572522238845" />
+    <state width="1398" height="318" key="GridCell.Tab.1.left/0.23.1440.838@0.23.1440.838" timestamp="1570755031352" />
+    <state width="1878" height="375" key="GridCell.Tab.1.right" timestamp="1573514855415">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.right/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1570144477138" />
+    <state width="1878" height="375" key="GridCell.Tab.1.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1573415858925" />
+    <state width="1398" height="303" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1573315980822" />
+    <state width="1878" height="375" key="GridCell.Tab.1.right/0.23.1440.832/1440.23.1920.1057@1440.23.1920.1057" timestamp="1573514855415" />
+    <state width="1878" height="375" key="GridCell.Tab.1.right/0.23.1440.832@0.23.1440.832" timestamp="1572290762755" />
+    <state width="1878" height="375" key="GridCell.Tab.1.right/0.23.1440.833/1440.0.1920.1080@1440.0.1920.1080" timestamp="1573337046180" />
+    <state width="1878" height="375" key="GridCell.Tab.1.right/0.23.1440.833/1440.23.1920.1057@1440.23.1920.1057" timestamp="1573341716799" />
+    <state width="1878" height="375" key="GridCell.Tab.1.right/0.23.1440.834/1440.0.1920.1080@1440.0.1920.1080" timestamp="1573337697295" />
+    <state width="1878" height="375" key="GridCell.Tab.1.right/0.23.1440.834/1440.23.1920.1057@1440.23.1920.1057" timestamp="1573342950118" />
+    <state width="1878" height="375" key="GridCell.Tab.1.right/0.23.1440.834@0.23.1440.834" timestamp="1571580788910" />
+    <state width="1398" height="268" key="GridCell.Tab.1.right/0.23.1440.835@0.23.1440.835" timestamp="1572522238845" />
+    <state width="1398" height="318" key="GridCell.Tab.1.right/0.23.1440.838@0.23.1440.838" timestamp="1570755031353" />
+    <state x="302" y="200" key="IDE.errors.dialog" timestamp="1573177752124">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="302" y="200" key="IDE.errors.dialog/0.0.1440.900@0.0.1440.900" timestamp="1573177752124" />
+    <state x="302" y="209" key="IDE.errors.dialog/0.23.1440.838@0.23.1440.838" timestamp="1570755119623" />
+    <state x="1717" y="28" width="900" height="722" key="SettingsEditor" timestamp="1573417292054">
       <screen x="1440" y="0" width="1920" height="1080" />
     </state>
-    <state x="1717" y="28" key="SettingsEditor/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1569869146403" />
+    <state x="1717" y="28" key="SettingsEditor/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1573417292054" />
     <state x="208" y="23" width="1024" height="833" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1569818171592" />
-    <state x="320" y="191" key="Vcs.Push.Dialog.v2" timestamp="1569817729818">
+    <state x="208" y="45" width="900" height="722" key="SettingsEditor/0.23.1440.834@0.23.1440.834" timestamp="1570482847298" />
+    <state x="320" y="191" key="Vcs.Push.Dialog.v2" timestamp="1573600342600">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="191" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1569817729818" />
-    <state x="399" y="252" key="com.intellij.ide.util.TipDialog" timestamp="1570124776467">
+    <state x="320" y="191" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1573600342600" />
+    <state x="1867" y="229" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1572976129115" />
+    <state x="320" y="191" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1571280557735" />
+    <state x="320" y="200" key="Vcs.Push.Dialog.v2/0.23.1440.833@0.23.1440.833" timestamp="1572159617258" />
+    <state x="320" y="200" key="Vcs.Push.Dialog.v2/0.23.1440.834@0.23.1440.834" timestamp="1572528159932" />
+    <state width="960" height="540" key="XDebugger.FullValuePopup" timestamp="1573411086581">
+      <screen x="1440" y="0" width="1920" height="1080" />
+    </state>
+    <state width="720" height="451" key="XDebugger.FullValuePopup/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1573327273793" />
+    <state width="960" height="540" key="XDebugger.FullValuePopup/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1573411086581" />
+    <state width="720" height="451" key="XDebugger.FullValuePopup/0.0.1440.900@0.0.1440.900" timestamp="1573296163211" />
+    <state width="720" height="418" key="XDebugger.FullValuePopup/0.23.1440.835@0.23.1440.835" timestamp="1572524062656" />
+    <state x="399" y="252" key="com.intellij.ide.util.TipDialog" timestamp="1573675487702">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="399" y="252" key="com.intellij.ide.util.TipDialog/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1570124776467" />
-    <state x="399" y="269" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1569817573481" />
+    <state x="399" y="252" key="com.intellij.ide.util.TipDialog/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1573675487702" />
+    <state x="1972" y="302" key="com.intellij.ide.util.TipDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1573516174946" />
+    <state x="399" y="269" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1573176243318" />
+    <state x="399" y="269" key="com.intellij.ide.util.TipDialog/0.23.1440.831@0.23.1440.831" timestamp="1573576696071" />
+    <state x="1972" y="319" key="com.intellij.ide.util.TipDialog/0.23.1440.832/1440.23.1920.1057@1440.23.1920.1057" timestamp="1572293866147" />
+    <state x="1972" y="319" key="com.intellij.ide.util.TipDialog/0.23.1440.833/1440.23.1920.1057@1440.23.1920.1057" timestamp="1571768060944" />
     <state x="399" y="272" key="com.intellij.ide.util.TipDialog/0.23.1440.833@0.23.1440.833" timestamp="1569815861419" />
     <state x="399" y="269" key="com.intellij.ide.util.TipDialog/0.23.1440.834@0.23.1440.834" timestamp="1569983401494" />
     <state x="399" y="269" key="com.intellij.ide.util.TipDialog/0.23.1440.835/1440.23.1920.1057@0.23.1440.835" timestamp="1569859197140" />
+    <state x="2206" y="237" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1573342087087">
+      <screen x="1440" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2206" y="237" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1573342087087" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1573086258030">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1573086258030" />
+    <state x="450" y="369" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1573521496255">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="450" y="369" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1440.900@0.0.1440.900" timestamp="1573521496255" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/updated_scripts/load_avg_csv_dataframe-better-1.py</url>
+          <line>43</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" log-message="true" suspend="THREAD" type="python-line">
+          <condition expression="'2019/10/24 11:52:35.939711' in string" language="Python" />
+          <url>file://$PROJECT_DIR$/updated_scripts/updated_radius_smb-1.py</url>
+          <line>94</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -19,7 +19,7 @@ def postgresql_logs_folder(path):
                     postgresql_files.append(f+'/'+file)
             return postgresql_files, postgresql_files_csv
 
-postgresql_files, postgresql_files_csv = postgresql_logs_folder('/Users/vinayreddy/Desktop/logs/balaji-postgres/')
+postgresql_files, postgresql_files_csv = postgresql_logs_folder('/Users/vinayreddy/Desktop/logs/charles-fdb/tmpO2glHJ/')
 
 print(postgresql_files)
 print(postgresql_files_csv)
@@ -49,7 +49,7 @@ if len(postgresql_files_csv) == 0 :
                     string = string + line + '\n'
 
 
-    with open('/Users/vinayreddy/Desktop/logs/balaji-postgres/tmpWSB2sL/SystemLogs/var/lib/pgsql/data/pg_log/queries.csv', 'w') as fh2:
+    with open('/Users/vinayreddy/Desktop/logs/charles-fdb/tmpO2glHJ/SystemLogs/var/lib/pgsql/data/pg_log/queries.csv', 'w') as fh2:
         outputwriter = csv.writer(fh2)
         for item in listoflines:
             if 'duration:' in item:
@@ -64,12 +64,14 @@ if len(postgresql_files_csv) == 0 :
 
 columns = ['date', 'timezone', 'dbuser', 'Dbname', 'pid', 'duration', 'statement/query']
 
-a=pd.read_csv('/Users/vinayreddy/Desktop/logs/balaji-postgres/tmpWSB2sL/SystemLogs/var/lib/pgsql/data/pg_log/queries.csv', names=columns, header = None)
+a=pd.read_csv('/Users/vinayreddy/Desktop/logs/charles-fdb/tmpO2glHJ/SystemLogs/var/lib/pgsql/data/pg_log/queries.csv', names=columns, header = None)
 
 a.duration = pd.to_numeric(a.duration, errors='coerce')
 
 b = a.sort_values(by=['duration'], ascending=False)
+f = b['statement/query'].head(1)
 
+#    print(b['statement/query'].head(1))
 #print(b.info())
 print(b.describe())
 
@@ -78,4 +80,5 @@ print(b.describe())
 series = b['statement/query']
 
 c = series.value_counts(sort=True)
+d = c.to_frame()
 print(c.to_frame())

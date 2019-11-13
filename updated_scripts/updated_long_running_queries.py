@@ -5,8 +5,10 @@ import os
 import csv
 
 import pandas as pd
+import datetime as dt
 import pprint
 
+start = dt.datetime.now()
 def postgresql_logs_folder(path):
     postgresql_files = []
     postgresql_files_csv = []
@@ -77,8 +79,9 @@ print(b.describe())
 
 series = b['statement/query']
 
-c = series.value_counts(sort=True)
-print(c.to_frame())
+c = series.value_counts(sort=True).to_frame()
+c.reset_index(inplace=True)
+query_count = c.rename(columns={'index': 'statement/query', 'statement/query': 'Count'})
 
 # d = a.set_index(['Dbname', 'statement/query']).count(level='Dbname')
 # print(d)
@@ -90,7 +93,9 @@ db_series.reset_index(inplace=True)
 db_series_count = db_series.rename(columns={'index': 'Dbname', 'Dbname': 'Count'})
 
 print(db_series_count)
+end = dt.datetime.now()
 
+print(end - start)
 
 '''
 output of db_series_count:
@@ -101,5 +106,21 @@ output of db_series_count:
 3  AppPlatform    411
 4     postgres      5
 5    template1      2
+
+output of query_count:
+
+query to count:
+      statement/query                                          Count 
+COMMIT\n\n                                                     3558
+SELECT * FROM aaa_session_info WHERE mac=$1 \n\n                223
+SELECT public.radius_acct.acct_id AS radius_acc...              195
+SELECT public.radius_acct.acct_id AS radius_acc...              170
+SELECT public.radius_acct.acct_id AS radius_acc...              165
+                                                             ...
+UPDATE public.endpoints SET updated_at='2019-05...                1
+UPDATE public.endpoints SET updated_at='2019-07...                1
+select tips_dhcp_snooping_info_insert_or_update...                1
+select tips_dhcp_snooping_info_insert_or_update...                1
+UPDATE public.endpoints SET updated_at='2019-09...                1
 
 '''

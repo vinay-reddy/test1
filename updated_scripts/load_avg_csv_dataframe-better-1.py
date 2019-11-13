@@ -68,7 +68,7 @@ def systemLoadMonitorLinesExtract(time):
             a = mo.group()
             return a
 
-extracted_text= systemLoadMonitorLinesExtract('06-29-19 03:43:06 PM')
+extracted_text= systemLoadMonitorLinesExtract('07-01-19 08:38:03 PM')
 print(extracted_text)
 
 '''

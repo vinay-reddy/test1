@@ -6,7 +6,7 @@ import operator
 
 list_of_lines = []
 list_of_macs = []
-with open('/Users/vinayreddy/Desktop/logs/johnson-profiling-issue/deviceprofiler/concated.log', 'r') as fh:
+with open('/Users/vinayreddy/Desktop/logs/johnson_profiling_case/nov12/devicelogs/concated.log', 'r') as fh:
     for line in fh:
         if 'Profile update mac' in line:
             list_of_lines.append(line)
@@ -23,7 +23,17 @@ for mac in list_of_macs:
 
 #pprint.pprint(count)
 sorted_d = sorted(count.items(), key=operator.itemgetter(1), reverse= True)
-
+print(type(sorted_d))
 #pprint.pprint(sorted_d)
+fh = open('/Users/vinayreddy/Desktop/logs/johnson_profiling_case/nov12/devicelogs/list.txt', 'w')
+for item in sorted_d:
+    print(item)
+    fh.write(item[0] +" -- "+ str(item[1]) + '\n')
 
-print(sorted_d)
+#fh = open('/Users/vinayreddy/Desktop/logs/johnson_profiling_case/device_profiler/list.txt', 'w')
+#fh.write(pprint.pprint(sorted_d))
+fh.close()
+
+# 2019-10-03 12:15:01,405
+
+# 2019-10-03 14:43:31,266
