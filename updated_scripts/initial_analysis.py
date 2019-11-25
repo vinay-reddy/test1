@@ -296,3 +296,5 @@ except:
 event_viewer_file = full_path('tips-system-events.txt')
 columns = ['Time', 'Task', 'Level', 'By', 'Description', 'status']
 df_ev = pd.read_csv(event_viewer_file, header = None, skiprows=1, sep='|', names=columns)
+
+print(df_ev)
