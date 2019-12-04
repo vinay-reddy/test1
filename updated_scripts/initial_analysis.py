@@ -5,7 +5,9 @@ import tarfile
 import concurrent.futures
 
 ro = re.compile(r'\d{4}\t')
-path = '/Users/vinayreddy/Desktop/logs/chandra-long/6_7/tmpgfR9Qo'
+#path = '/Users/vinayreddy/Desktop/logs/chandra-long/6_8/'
+#path = '/Users/vinayreddy/Desktop/logs/jeff_social_login/latest_logs/tmpZCO9pl/'
+path = '/Users/vinayreddy/Desktop/logs/chandra-long/tmpA_8bYH/'
 
 # function to pull the full path once you pass the filename:
 
@@ -296,3 +298,5 @@ except:
 event_viewer_file = full_path('tips-system-events.txt')
 columns = ['Time', 'Task', 'Level', 'By', 'Description', 'status']
 df_ev = pd.read_csv(event_viewer_file, header = None, skiprows=1, sep='|', names=columns)
+
+print(df_ev)

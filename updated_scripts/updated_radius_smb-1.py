@@ -181,7 +181,7 @@ def filterSessionId(sessionID):
     #     print(df3)
     return df14
 
-df14 = filterSessionId('R0012ba0f-01-5db1ca8c')
+
 
 ########## radius csv file creation #########
 
@@ -218,7 +218,7 @@ columns = ['Time', 'drop', 'Thread/RequestNo./SessionID', 'Level','Module', 'Mes
 df = pd.read_csv(radius_csv[0], header= None, names = columns)
 df = df.drop(['drop'], axis=1)
 df2 = df[df['Level'] == 'ERROR']
-df3 = df[df['Message'].str.contains('Session-Id = ')]
+#df3 = df[df['Message'].str.contains('Session-Id = ')]
 df7 = df[df['Message'].str.contains(' searching for user ')]
 
 #function to give the entire authentication for a user per request Id (df5) and times taken (df6)
@@ -316,8 +316,27 @@ sorted_username_count = sorted(username_count_dict.items(), key=operator.itemget
 #pprint.pprint(username_session_id_dict)
 # function to pull all users
 
-df5, df6, samba_lines, df11 = auth_request('R0012ba0f-01-5db1ca8c')
+def allLogs(session_id):
+    df5, df6, samba_lines, df11 = auth_request(session_id)
+    df14 = filterSessionId(session_id)
+    return df5, df6, samba_lines, df11, df14
+
+df5, df6, samba_lines, df11, df14 = allLogs('R0012ba0f-01-5db1ca8c')
+
+for index in df14.index:
+    print('Policy-Server')
+    print(df14['Time'][index], df14['Hmmm...'][index], df14['Level'][index], df14['Module'][index], df14['Message'][index])
+
 end = dt.datetime.now()
+
+# lengths = []
+# for session in session_id_list:
+#     lengths.append(len(session))
+#
+# all_lengths = list(set(lengths))
+
+
+###########----> start <----############
 
 print(end - start)
 
@@ -335,6 +354,18 @@ a.strftime('%Y/%m/%d %H:%M:%S.%f)
 
 
 1. 
+
+target:
+
+1.  session_id, Username, service, times - 
+
+2.  we should be able to  filter based on the request processing time, service categorization time, user look up time, mschap v2 authentication time , Policy evaluation time ?
+
+3.  Should be able to plot a graph based on above times 
+
+4.  Should be able to plot graph based on the frequency of authentications. per 1 min, 5 mins, 10, 15, 30min, 1 hour, 2, 4, 8 hrs. 1 day.
+
+5.  
 '''
 
 

@@ -1,0 +1,134 @@
+
+1. extract the backup file. -- DOne.
+2. pg_restore the tipsdb and appPlatformdb   --- DOne
+3. fetching licenses  --- done.
+4. server list --- done.
+5.
+    a. system configuration
+      for vm appliances.                        --- DOne
+    b. for HW we have to do in a different way  --- NOT done.
+6. system events ==> service restart. -- done.
+                 'Warning'
+                 'Errors'
+                 priting .
+
+columns = ['Time', 'Task', 'Level', 'By', 'Description', 'status']
+
+
+radius:
+
+1. makes sense to parallel process until the creation of csv files of all the logs. (interested logs)
+2. dfs
+
+
+errors:
+
+session_ids_per_username
+  username_session_id_dict
+
+user_session_ids
+  df7
+
+filterSessionId               --> done.
+  df12
+
+
+
+1.
+    a.    table --- with session id, username, service, times (all times with each time - each column.)
+    b.    sort by times on times columns.
+
+    plan: go through each line of df and create a dictionary of dictionaries per session id.
+
+    timestamp, session_id, service, auth_source, times.., enforcement profile.
+    i. timestamp, session_id ---> rlm_service: Starting Service Categorization ---> under message (column1, column3)
+        extract session id from 'Th 31707 Req 10364795 SessId R0011c034-01-5db0d5a0'
+    ii.    session_id, service_categorization time  --> 2019-10-23 15:35:12,358",-23,Th 31707 Req 10364795 SessId R0011c034-01-      5db0d5a0,INFO,RadiusServer.Radius,Service Categorization time = 5 ms
+
+    iii. service --> rlm_service: The request has been categorized into service
+
+
+
+
+2.  Radius authentication frequencies -
+  a.
+    x - axis times.
+    y - axis no. of authentications
+    a slider to change the frequency of times.
+
+    what's required:
+    timestamp, session id filtered on 'rlm_service: Starting Service Categorization'
+
+  b.
+    no. of requests in the request processing tree.
+
+    x - axis times.
+    y - axis no. of requests in the request processing tree
+    a slider to change the frequency of times.
+
+    filter with 'No.of requests in request processing'
+
+3.  Fetching the logs per session id once we click on the hyperlink on first requirement.
+
+4.  Unique sessions.            ---> this is done.
+5.
+    a.  sessions per username.                        ---> this is done.
+    b.  username and no. of authentications.          ---> this is done.
+6.  service and no. of times it is used (count).
+    session id, service, -- count.
+
+7.  extracting the certificates, private keys and decoded passwords.
+    a. from the backup -- certificates, private keys
+    b. db login to one of the ClearPass server and
+
+8.  function to filter based on whatever the column u choose.
+
+
+
+#list_of_items_to_check = {'Starting Service Categorization': f1, 'Service Categorization time': f2, 'The request has been categorized into service':f3, 'found user':f4, 'User lookup time':f5,  'rlm_eap_peap: Initiate':f6,
+'No.of requests in request processing tree':f7, 'authenticating user':f8, 'authenticated successfully':f9, 'User Authentication time':f10, 'Policy Evaluation time':f11, 'Enforcement Profile':f12, 'Request processing time':f13 }
+
+
+
+plan: go through each line of df and create a dictionary of dictionaries per session id.
+Create a dictionary of lists with session id as the key, and list of timestamps as the value. (for concise view of authentication.)
+
+timestamp, session_id, service, auth_source, times.., dot1x ? enforcement profile, authentication success or not, timeout or not.
+i. timestamp, session_id ---> rlm_service: Starting Service Categorization ---> under message (column1, column3)
+    extract session id from 'Th 31707 Req 10364795 SessId R0011c034-01-5db0d5a0'
+ii.    session_id, service_categorization time  --> 2019-10-23 15:35:12,358",-23,Th 31707 Req 10364795 SessId R0011c034-01-      5db0d5a0,INFO,RadiusServer.Radius,Service Categorization time = 5 ms
+iii. service --> rlm_service: The request has been categorized into  service ( there could be multiple times this message is seen for one session id, we have to ignore if it is seen for the same session id.)
+iv. auth_source / user found in
+v. user look up time
+vi. dot1x ?
+vii. no.of requests in the request processing time at this time when this authentication request came. (there could be multiple 'No.of requests in request processing tree')
+viii. username, domain
+ix. authentication successful ?
+x. Ms-Chap User authentication time / User authentication time.
+xi. Policy evaluation time.
+xii. enforcement profile. ?? -- remove if it doesn't show up correctly in logs.
+xiii. Request processing time.
+
+
+columns_radius = ['Time', 'drop', 'Thread/RequestNo./SessionID', 'Level','Module', 'Message']
+
+
+1.  "2019-10-23 15:35:12,353",''-23','Th 31707 Req 10364795 SessId R0011c034-01-5db0d5a0','INFO','RadiusServer.Radius','rlm_service: Starting Service Categorization - 62:220:7CA1AE0940FD'
+2.  "2019-10-23 15:35:12,358",""-23","Th 31707 Req 10364795 SessId R0011c034-01-5db0d5a0","INFO","RadiusServer.Radius","Service Categorization time = 5 ms"
+3.  "2019-10-23 15:35:12,358",-23,Th 31707 Req 10364795 SessId R0011c034-01-5db0d5a0,INFO,RadiusServer.Radius,"rlm_service: The request has been categorized into service ""WLAN eduroam 802.1X - csudh.edu"""
+4.  "2019-10-23 15:35:12,360",-23,Th 31707 Req 10364795 SessId R0011c034-01-5db0d5a0,INFO,RadiusServer.Radius,rlm_ldap: found user mjauregui14 in AD:campus.csudh.edu
+5.  "2019-10-23 15:35:12,360",-23,Th 31707 Req 10364795 SessId R0011c034-01-5db0d5a0,INFO,RadiusServer.Radius,LDAP/AD User lookup time = 2 ms
+6.  "2019-10-23 15:35:12,360",-23,Th 31707 Req 10364795 SessId R0011c034-01-5db0d5a0,INFO,RadiusServer.Radius,rlm_eap_peap: Initiate
+7.  "2019-10-23 15:35:12,462",-23,Th 31705 Req 10364804 SessId R0011c034-01-5db0d5a0,INFO,RadiusServer.Radius,No.of requests in request processing tree: 50
+8.  "2019-10-23 15:35:12,574",-23,Th 31704 Req 10364818 SessId R0011c034-01-5db0d5a0,INFO,RadiusServer.Radius,"rlm_mschap: authenticating user mjauregui14, domain CAMPUS"
+9.  "2019-10-23 15:35:12,578",-23,Th 31704 Req 10364818 SessId R0011c034-01-5db0d5a0,INFO,RadiusServer.Radius,rlm_mschap: user mjauregui14 authenticated successfully
+10. "2019-10-23 15:35:12,578",-23,Th 31704 Req 10364818 SessId R0011c034-01-5db0d5a0,INFO,RadiusServer.Radius,MS-Chap User Authentication time = 4 ms
+11. "2019-10-23 15:35:12,612",-23,Th 31702 Req 10364820 SessId R0011c034-01-5db0d5a0,INFO,RadiusServer.Radius,Policy Evaluation time = 20 ms
+12. "2019-10-23 15:35:12,612",-23,Th 31702 Req 10364820 SessId R0011c034-01-5db0d5a0,INFO,RadiusServer.Radius,rlm_policy: Received Accept Enforcement Profile
+13. "2019-10-23 15:35:12,618",-23,Th 31710 Req 10364822 SessId R0011c034-01-5db0d5a0,INFO,RadiusServer.Radius,Request processing time = 267 ms
+
+
+
+read csv into df
+
+maybe using threading, filter out only lines containing

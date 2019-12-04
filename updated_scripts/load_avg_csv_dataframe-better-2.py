@@ -10,7 +10,7 @@ import pandas as pd
 # regex_object = re.compile(r'(([\d -:]+(PM|AM))\n(.*?)load average: ([\d .]+),([\d .]+),([\d .]+)\n.*\n([%\w():]+([\d. ]+)[\w,]+([\d. ]+)[\w,]+ .*id, ([\d. ]+)wa))')
 # regex_ob_first_pattern = re.compile(r'([\d -:]+(PM|AM))')
 # regex_ob_second_pattern = re.compile(r'([%\w():]+([\d. ]+)[\w,]+([\d. ]+)[\w,]+ .*id, ([\d. ]+)wa)')
-ro = re.compile(r'(([\d -:]+(PM|AM))\n(.*?load average: ([\d .]+),([\d .]+),([\d .]+))\n.*\n([%\w():]+([\d. ]+)[\w,]+([\d. ]+)[\w,]+([\d. ]+)ni, ([\d. ]+)id, ([\d. ]+)wa, ([\d. ]+)hi, ([\d. ]+)si, ([\d. ]+)st)\n(KiB Mem : ([\d ]+)total,([\d ]+)free,([\d ]+)used,([\d ]+)buff/cache)\n(KiB Swap:([\d ]+)total,([\d ]+)free,([\d ]+)used.([\d ]+)avail Mem))')
+regex_system_load_monitor = re.compile(r'(([\d -:]+(PM|AM))\n(.*?load average: ([\d .]+),([\d .]+),([\d .]+))\n.*\n([%\w():]+([\d. ]+)[\w,]+([\d. ]+)[\w,]+([\d. ]+)ni, ([\d. ]+)id, ([\d. ]+)wa, ([\d. ]+)hi, ([\d. ]+)si, ([\d. ]+)st)\n(KiB Mem : ([\d ]+)total,([\d ]+)free,([\d ]+)used,([\d ]+)buff/cache)\n(KiB Swap:([\d ]+)total,([\d ]+)free,([\d ]+)used.([\d ]+)avail Mem))')
 
 
 def system_load_monitor_folder_files(path):
@@ -44,13 +44,13 @@ if len(system_load_files_csv) == 0 :
             with open( system_load_files_folder + '/system-load-csv' ,'a' ) as fh2:
                 csv_fh = csv.writer(fh2)
                 for i in c:
-                    d = ro.search(i)
+                    d = regex_system_load_monitor.search(i)
                     if d is not None:
                         csv_fh.writerow([d[2].strip(), d[5].strip(), d[6].strip(), d[7].strip(), d[9].strip(), d[10].strip(), d[11].strip(), d[12].strip(), d[13].strip(), d[14].strip(),d[15].strip(), d[16].strip(), d[18].strip(), d[19].strip(), d[20].strip(), d[21].strip(), d[23].strip(), d[24].strip(), d[25].strip(),d[26].strip()])
                     else:
                         print(i)
-columns = ['Date-Time', '1 Min load avg', '5 Min load avg', '15 Min load avg', 'us', 'sy', 'ni', 'id','wa', 'hi', 'si', 'st', 'KiB Memory-Total', 'KiB Memory-free', 'KiB Memory-used', 'KiB Memory-Buff/Cache', 'KiB Swap-total', 'KiB Swap-free', 'KiB Swap-used', 'KiB Swap-available-Mem']
-df = pd.read_csv(system_load_files_folder + '/system-load-csv', names=columns,  header=None)
+columns_system_load_monitor = ['Date-Time', '1 Min load avg', '5 Min load avg', '15 Min load avg', 'us', 'sy', 'ni', 'id','wa', 'hi', 'si', 'st', 'KiB Memory-Total', 'KiB Memory-free', 'KiB Memory-used', 'KiB Memory-Buff/Cache', 'KiB Swap-total', 'KiB Swap-free', 'KiB Swap-used', 'KiB Swap-available-Mem']
+df = pd.read_csv(system_load_files_folder + '/system-load-csv', names=columns_system_load_monitor,  header=None)
 # df['KiB Swap-available-Mem'] = df['KiB Swap-available-Mem'].astype(int)
 
 print(len(columns))
@@ -65,23 +65,23 @@ def systemLoadMonitorLinesExtract(time):
         count=file_read.count(time)
         print('Count =', count)
         if count == 2:
-            ro = re.compile(r'{}.*?{}.*?{}' .format(time, time, '\d{2}-\d{2}-\d{2} \d{2}:\d{2}:\d{2} [A-Z]{2}'), re.DOTALL)
-            mo = ro.search(file_read)
+            regex_sys_load_mon_1 = re.compile(r'{}.*?{}.*?{}' .format(time, time, '\d{2}-\d{2}-\d{2} \d{2}:\d{2}:\d{2} [A-Z]{2}'), re.DOTALL)
+            mo = regex_sys_load_mon_1.search(file_read)
             if mo is not None:
                 a = mo.group()
                 return a
         elif count == 1:
-            ro = re.compile(r'{}.*?{}' .format(time, '\d{2}-\d{2}-\d{2} \d{2}:\d{2}:\d{2} [A-Z]{2}'), re.DOTALL)
-            print(ro)
-            mo = ro.search(file_read)
+            regex_sys_load_mon_2 = re.compile(r'{}.*?{}' .format(time, '\d{2}-\d{2}-\d{2} \d{2}:\d{2}:\d{2} [A-Z]{2}'), re.DOTALL)
+            print(regex_sys_load_mon_2)
+            mo = regex_sys_load_mon_2.search(file_read)
             if mo is not None:
                 a = mo.group()
                 return a
             else:
                 print('You are in this else block')
-                ro = re.compile(r'{}.*' .format(time), re.DOTALL)
-                print(ro)
-                mo = ro.search(file_read)
+                regex_sys_load_mon_3 = re.compile(r'{}.*' .format(time), re.DOTALL)
+                print(regex_sys_load_mon_3)
+                mo = regex_sys_load_mon_3.search(file_read)
                 if mo is not None:
                     a = mo.group()
                     return a

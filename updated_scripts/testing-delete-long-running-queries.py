@@ -13,7 +13,7 @@ def postgresql_logs_folder(path):
     postgresql_files = []
     postgresql_files_csv = []
     for f, sf, files in os.walk(path):
-        if '/SystemLogs/var/lib/pgsql/data/pg_log' in f:
+        if '/Users/vinayreddy/Desktop/logs/chandra-long/Notworking_PGLogs' in f:
             for file in files:
                 if 'csv' in file:
                     postgresql_files_csv.append(f+'/'+file)
@@ -21,16 +21,16 @@ def postgresql_logs_folder(path):
                     postgresql_files.append(f+'/'+file)
             return postgresql_files, postgresql_files_csv
 
-postgresql_files, postgresql_files_csv = postgresql_logs_folder('/Users/vinayreddy/Desktop/logs/balaji-postgres/')
+postgresql_files, postgresql_files_csv = postgresql_logs_folder('/Users/vinayreddy/Desktop/logs/chandra-long/Notworking_PGLogs')
 
 print(postgresql_files)
 print(postgresql_files_csv)
 
 
-regexobj_postgresql=re.compile(r'^(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}) (\w{3}) ')
+regexobj=re.compile(r'^(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}) (\w{3,4}) ')
 
 string = ''
-regexobj2_postgresql = re.compile(r'(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}) (\w{3,}) (\w+) (\w+) (\d+) .* duration: ([\d.]+) .*?: (.*)', re.DOTALL) #good perfectly working one.
+regexobj2 = re.compile(r'(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}) (\w{3,}) (\w+) (\w+) (\d+) .* duration: ([\d.]+) .*?: (.*)', re.DOTALL) #good perfectly working one.
 listoflines = []
 
 if len(postgresql_files_csv) == 0 :
@@ -39,7 +39,7 @@ if len(postgresql_files_csv) == 0 :
             firstPatternFound = None
             secondPatternFound = None
             for line in fh.readlines():
-                b = regexobj_postgresql.search(line)
+                b = regexobj.search(line)
                 if b is not None and firstPatternFound is None:
                     firstPatternFound =1
                     string = string + line +'\n'
@@ -51,22 +51,23 @@ if len(postgresql_files_csv) == 0 :
                     string = string + line + '\n'
 
 
-    with open('/Users/vinayreddy/Desktop/logs/balaji-postgres/tmpWSB2sL/SystemLogs/var/lib/pgsql/data/pg_log/queries.csv', 'w') as fh2:
+
+    with open('/Users/vinayreddy/Desktop/logs/chandra-long/Notworking_PGLogs/queries.csv', 'w') as fh2:
         outputwriter = csv.writer(fh2)
         for item in listoflines:
             if 'duration:' in item:
                 #             print(item)
-                c = regexobj2_postgresql.search(item)
+                c = regexobj2.search(item)
                 #             print(c.groups())
                 outputwriter.writerow(c.groups())
             #             print(list(c.groups()))
             else:
                 continue
 
+print(listoflines)
+columns = ['date', 'timezone', 'dbuser', 'Dbname', 'pid', 'duration', 'statement/query']
 
-columns_postgresql = ['date', 'timezone', 'dbuser', 'Dbname', 'pid', 'duration', 'statement/query']
-
-a=pd.read_csv('/Users/vinayreddy/Desktop/logs/balaji-postgres/tmpWSB2sL/SystemLogs/var/lib/pgsql/data/pg_log/queries.csv', names=columns_postgresql, header = None)
+a=pd.read_csv('/Users/vinayreddy/Desktop/logs/chandra-long/Notworking_PGLogs/queries.csv', names=columns, header = None)
 
 a.duration = pd.to_numeric(a.duration, errors='coerce')
 
