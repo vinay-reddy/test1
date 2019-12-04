@@ -5,9 +5,7 @@ import tarfile
 import concurrent.futures
 
 ro = re.compile(r'\d{4}\t')
-#path = '/Users/vinayreddy/Desktop/logs/chandra-long/6_8/'
-#path = '/Users/vinayreddy/Desktop/logs/jeff_social_login/latest_logs/tmpZCO9pl/'
-path = '/Users/vinayreddy/Desktop/logs/chandra-long/tmpA_8bYH/'
+path = '/Users/vinayreddy/Desktop/logs/chandra-long/6_7/tmpgfR9Qo'
 
 # function to pull the full path once you pass the filename:
 
